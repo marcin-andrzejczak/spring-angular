@@ -15,6 +15,10 @@
   <name>angular-frontend</name>
   <description>Angular client application</description>
 
+  <properties>
+    <ng.build.type></ng.build.type>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
@@ -60,7 +64,7 @@
               <goal>npm</goal>
             </goals>
             <configuration>
-              <arguments>run-script build</arguments>
+              <arguments>run-script build${ng.build.type}</arguments>
             </configuration>
           </execution>
         </executions>
