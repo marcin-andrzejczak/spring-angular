@@ -1,0 +1,20 @@
+# Outputs
+bazel-*
+test-project-host-*
+dist/
+
+# IDEs
+.idea/
+jsconfig.json
+# Typings file.
+typings/
+
+# Misc
+coverage/
+node_modules/
+tmp/
+npm-debug.log*
+yarn-error.log*
+.ng_pkg_build/
+
+/target/

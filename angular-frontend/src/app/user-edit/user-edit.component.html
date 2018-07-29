@@ -1,0 +1,46 @@
+<mat-card>
+  <form #userForm="ngForm" (submit)="save(userForm.value)">
+    <mat-card-header>
+      <mat-card-title>
+        <h2>{{user.name ? 'Edit' : 'Add'}} User</h2>
+      </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <input type="hidden" name="href" [(ngModel)]="user.href">
+      <mat-form-field>
+        <input matInput placeholder="Email" [(ngModel)]="user.email"
+               required name="email" #email type="email">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Name" [(ngModel)]="user.name"
+               required name="name" #name>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Surname" [(ngModel)]="user.surname"
+               required name="surname" #surname>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Nickname" [(ngModel)]="user.nickname"
+               name="nickname" #nickname>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Password" [(ngModel)]="user.password"
+               required name="password" #password type="password">
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit"
+              [disabled]="!userForm.form.valid">Save</button>
+      <button mat-raised-button color="secondary" (click)="remove(user.href)"
+              *ngIf="user.href" type="button">Delete</button>
+      <a mat-button routerLink="/user-list">Cancel</a>
+    </mat-card-actions>
+    <mat-card-footer>
+      <div class="giphy">
+        <h1>Noice footer :)</h1>
+      </div>
+    </mat-card-footer>
+
+  </form>
+</mat-card>
