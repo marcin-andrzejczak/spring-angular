@@ -1,7 +1,7 @@
 package com.example.website.api.rest;
 
 import com.example.website.exception.ResourceNotFoundException;
-import com.example.website.model.UserModel;
+import com.example.website.models.UserModel;
 import com.example.website.repository.UserRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

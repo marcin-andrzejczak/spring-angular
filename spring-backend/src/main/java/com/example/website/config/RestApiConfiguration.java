@@ -1,6 +1,6 @@
 package com.example.website.config;
 
-import com.example.website.model.UserModel;
+import com.example.website.models.UserModel;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter;

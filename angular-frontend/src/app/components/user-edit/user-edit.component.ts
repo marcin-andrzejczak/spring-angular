@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subscription} from "rxjs/internal/Subscription";
 import {ActivatedRoute, Router} from "@angular/router";
-import {UserService} from "../shared/user.service";
+import {UserService} from "../../services/user.service";
 import {NgForm} from "@angular/forms";
 
 @Component({

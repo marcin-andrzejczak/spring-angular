@@ -1,4 +1,4 @@
-package com.example.website.model;
+package com.example.website.models;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
