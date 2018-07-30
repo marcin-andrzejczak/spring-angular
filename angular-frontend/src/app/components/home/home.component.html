@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-content>
+    <h1>Greeting</h1>
+    <div [hidden]="!authenticated()">
+      <p>{{greeting}}</p>
+    </div>
+    <div [hidden]="authenticated()">
+      <p>Login to see your greeting</p>
+    </div>
+  </mat-card-content>
+</mat-card>
